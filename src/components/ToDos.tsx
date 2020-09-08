@@ -23,7 +23,7 @@ export const ToDos = () => {
         toDos: [...newTodos],
       }
     }
-  }));
+  }), []);
   if (loading) return <h1>Loading...</h1>;
   if (error || !data) return <h1>Failed to load!</h1>;
   return (
