@@ -1,0 +1,5 @@
+query ToDos {
+  toDos {
+    ...ToDoFull
+  }
+}

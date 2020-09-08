@@ -1,0 +1,4 @@
+fragment ToDoFull on ToDo {
+  id,
+  title
+}

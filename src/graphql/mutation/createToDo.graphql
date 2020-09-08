@@ -1,0 +1,5 @@
+mutation CreateToDo($title: String) {
+  createToDo(title: $title) {
+    ...ToDoFull
+  }
+}

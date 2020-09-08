@@ -1,0 +1,24 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+type Mutation {
+  createToDo(title: String): ToDo!
+}
+
+type Query {
+  toDos: [ToDo]!
+}
+
+type Subscription {
+  ToDoChanged: ToDo!
+}
+
+type ToDo {
+  id: ID!
+  title: String!
+}
